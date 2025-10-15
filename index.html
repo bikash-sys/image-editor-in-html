@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Filter & Text Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🖼️ Advanced Image Filter & Text Editor</h1>
+
+    <div class="upload-section">
+      <label for="upload" class="upload-label">Upload Image</label>
+      <input type="file" id="upload" accept="image/*">
+    </div>
+
+    <div class="canvas-area" id="canvas-area">
+      <p>No image uploaded</p>
+    </div>
+
+    <h2>🎨 Image Filters</h2>
+    <div class="controls">
+      <label>Brightness</label><input type="range" id="brightness" min="0" max="200" value="100">
+      <label>Contrast</label><input type="range" id="contrast" min="0" max="200" value="100">
+      <label>Saturation</label><input type="range" id="saturate" min="0" max="200" value="100">
+      <label>Blur</label><input type="range" id="blur" min="0" max="10" value="0">
+      <label>Grayscale</label><input type="range" id="grayscale" min="0" max="100" value="0">
+      <label>Sepia</label><input type="range" id="sepia" min="0" max="100" value="0">
+    </div>
+
+    <h2>✏️ Text Controls</h2>
+    <div class="controls">
+      <label>Font Size</label><input type="number" id="font-size" min="10" max="100" value="30">
+      <label>Text Color</label><input type="color" id="text-color" value="#ffffff">
+      <button id="add-text">Add Text Box</button>
+    </div>
+
+    <div class="buttons">
+      <button id="reset">Reset</button>
+      <button id="download">Download</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

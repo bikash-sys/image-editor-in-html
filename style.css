@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+}
+
+.container {
+  width: 95%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.upload-section {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.upload-label {
+  background: #00adb5;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.upload-label:hover {
+  background: #02c39a;
+}
+
+.canvas-area {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.canvas-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+.text-box {
+  position: absolute;
+  min-width: 100px;
+  min-height: 40px;
+  padding: 5px 10px;
+  border: 2px dashed rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  cursor: move;
+  user-select: text;
+  background: transparent;
+}
+
+.text-box:focus {
+  outline: 2px solid #00adb5;
+}
+
+.resize-handle, .rotate-handle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #00adb5;
+  position: absolute;
+}
+
+.resize-handle {
+  bottom: -10px;
+  right: -10px;
+  cursor: se-resize;
+}
+
+.rotate-handle {
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: grab;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+button {
+  background: #00adb5;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #02c39a;
+}
