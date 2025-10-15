@@ -32,8 +32,8 @@ A modern, browser-based image editor that lets you **apply filters**, **add cust
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/image-filter-text-editor.git
-   cd image-filter-text-editor
+   git clone https://github.com/bikash-sys/image-editor-in-html.git
+   cd image-editor-in-html
    ```
 
 2. **Open** `index.html` in your browser
