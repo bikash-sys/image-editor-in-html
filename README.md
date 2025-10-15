@@ -18,12 +18,6 @@ A modern, browser-based image editor that lets you **apply filters**, **add cust
 
 ---
 
-## 📸 Preview
-
-![Preview](screenshot.png)  
-*Replace `screenshot.png` with an actual screenshot of your app for better visual appeal.*
-
----
 
 ## 🛠️ Tech Stack
 
